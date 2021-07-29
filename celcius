@@ -1,0 +1,5 @@
+temp = input('Please enter temperature in F or C ')
+if 'F' in temp:
+    print('Temperature is in Fahrenheit')
+else:
+    print('Temperature is in Celsius')
