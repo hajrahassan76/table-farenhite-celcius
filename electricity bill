@@ -1,0 +1,21 @@
+n = input("enter units")
+rate_for_200 = 21.8
+rate_for_lessthan_800 = 25.8
+rate_for_greaterthan_800 = 27.8
+if int(n)>0 and int(n)<=200:
+    a = int(n)*rate_for_200
+    print(a)
+elif int(n)>=200 and int(n)<= 800:
+     a = int(n) * rate_for_200
+     b = 200*rate_for_200
+     unit1 = int(n)-200
+     rate = unit1+rate_for_lessthan_800
+     total = a+b
+     print(total)
+elif int(n)>=800:
+    r = rate_for_200*200
+    var_1 =rate_for_lessthan_800*600
+    unit1= int(n)-800
+    var_2 = unit1*rate_for_greaterthan_800
+    total= r+var_1+var_2
+    print(total)
