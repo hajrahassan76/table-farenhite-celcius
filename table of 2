@@ -1,0 +1,10 @@
+def write_file():
+    f = open("table.txt", "w+")
+    n = 2
+    print("write table of 2" )
+    for i in range(1, 11):
+      a = n, '*', i, '=', n * i
+      f.write(str(a))
+      f.write("/n")
+    f.close()
+write_file()
