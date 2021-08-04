@@ -1,0 +1,11 @@
+def read_file():
+    f=open("Check.txt","r")
+    count=0
+    val = input("Enter Value to check: ")
+    read=f.read()
+    for x in read:
+        if x == val:
+            count= count+1
+    print(count)
+    f.close()
+read_file()
